@@ -7,6 +7,7 @@ import re
 import argparse
 import random
 
+
 def get_arguments():
 	parser = argparse.ArgumentParser(description="Remove PCR duplicates from single-end reads with UMIs. At this time, we can only support single-end duplicate removal. Also, input sam files need to be sorted by RNAME before running this program. For updates, please contact hklein3@uoregon.edu.")
 	parser.add_argument('-f', '--file', required=True, help='Indicate the absolute path to a SAM file from which to remove PCR duplicates')
